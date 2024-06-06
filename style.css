@@ -33,3 +33,11 @@ h1 {
     position: absolute;
     z-index: 1;
 }
+
+#see-through {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+}
