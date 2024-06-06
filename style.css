@@ -18,9 +18,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 h1 {
     font-size: 2rem;
     color: rebeccapurple;
+}
+
+#shadow {
+    background-color: black;
+    height: 100dvh;
+    width: 100dvw;
+    position: absolute;
+    z-index: 1;
 }
