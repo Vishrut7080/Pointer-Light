@@ -1,4 +1,4 @@
-const seeThrough = document.getElementById("see-through");
+const seeThrough = document.getElementById("shadow");
 
 document.addEventListener('mousemove', (e) => {
     const posX = e.x

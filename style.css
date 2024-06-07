@@ -33,13 +33,3 @@ h1 {
     position: absolute;
     z-index: 1;
 }
-
-#see-through {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    background-color: white;
-    border-radius: 50%;
-    transform: translate(-48%, -48%);
-    z-index: 2;
-}
