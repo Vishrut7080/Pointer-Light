@@ -36,3 +36,10 @@ h1 {
     mask-image: radial-gradient(circle, transparent, black 5dvw);
     transform: translate(-50%, -50%);
 }
+
+#iframe {
+    height: 100dvh;
+    width: 100dvw;
+    border: 2px solid black;
+    box-shadow: 10px 10px black;
+}
