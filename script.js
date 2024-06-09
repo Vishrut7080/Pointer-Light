@@ -41,20 +41,9 @@ function step(timestamp) {
 // Start the animation by requesting the first frame
 requestAnimationFrame(step);
 
-
-// function clicking(evt) {
-//     if (evt.key == "`") {
-//         console.log("click");
-//         shadow.style.display = shadow.style.display == "none" ? "block" : "none";
-//         flag = true;
-//     }
-// }
-
-
-// document.addEventListener("keypress", (evt) => {
-//     clicking(evt);
-// })
-
-// document.getElementById("iframe").addEventListener("keypress", (evt) => {
-//     clicking(evt);
-// })
+document.addEventListener("keypress", (evt) => {
+    if (evt.key == "`") {
+        console.log("click");
+        shadow.style.display = shadow.style.display == "none" ? "block" : "none";
+    }
+})
