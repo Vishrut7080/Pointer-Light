@@ -32,4 +32,5 @@ h1 {
     width: 100dvw;
     position: absolute;
     z-index: 1;
+    mask-image: radial-gradient(circle, transparent, black 15%);
 }
