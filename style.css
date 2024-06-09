@@ -27,7 +27,7 @@ h1 {
     color: rebeccapurple;
 }
 
-#shadow {
+/* #shadow {
     background-color: black;
     height: 300dvh;
     width: 300dvw;
@@ -35,9 +35,9 @@ h1 {
     z-index: 1;
     mask-image: radial-gradient(circle, transparent, black 5dvw);
     transform: translate(-50%, -50%);
-}
+} */
 
-#iframe {
+#player {
     height: 100dvh;
     width: 100dvw;
     border: 2px solid black;

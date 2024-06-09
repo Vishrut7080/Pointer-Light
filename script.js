@@ -1,9 +1,9 @@
-const seeThrough = document.getElementById("shadow");
+const shadow = document.getElementById("shadow");
 
 document.addEventListener('mousemove', (e) => {
     const posX = e.x
     const posY = e.y
-    console.log(posX, posY)
-    seeThrough.style.left = `${posX}px`;
-    seeThrough.style.top = `${posY}px`;
+    // console.log(posX, posY)
+    shadow.style.left = `${posX}px`;
+    shadow.style.top = `${posY}px`;
 })
