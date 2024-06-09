@@ -50,7 +50,12 @@
 
         // 4. The API will call this function when the video player is ready.
         function onPlayerReady(event) {
+            console.log(event.target)
             event.target.playVideo();
+
+            // Fullscreen the video
+            go_full_screen();
+
             setInterval(() => {
                 // Loop back to `start` seconds when the video reaches `end` seconds
                 if (event.target.playerInfo.currentTime > end) {
@@ -69,13 +74,24 @@
                 // Unmute the video after 500ms
                 setTimeout(() => {
                     event.target.unMute();
-                    // event.target.playVideo();
+                    event.target.playVideo();
                 }, 500);
             }
         }
-        // function stopVideo() {
-        //     player.stopVideo();
-        // }
+
+        function go_full_screen() {
+            var elem = document.documentElement;
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            } else if (elem.mozRequestFullScreen) {
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            }
+        }
+
     </script>
 
 </body>
