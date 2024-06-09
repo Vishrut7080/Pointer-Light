@@ -27,15 +27,15 @@ h1 {
     color: rebeccapurple;
 }
 
-/* #shadow {
+#shadow {
     background-color: black;
     height: 300dvh;
     width: 300dvw;
     position: absolute;
     z-index: 1;
-    mask-image: radial-gradient(circle, transparent, black 5dvw);
+    mask-image: radial-gradient(circle, transparent, black 33dvw);
     transform: translate(-50%, -50%);
-} */
+}
 
 #player {
     height: 100dvh;
