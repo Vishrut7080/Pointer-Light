@@ -10,8 +10,8 @@ document.addEventListener('mousemove', (e) => {
 
 
 let startTime = null; // The start time of the animation
-const transparentStart = 25; // The initial value of the --transparent CSS variable
-const shadowsStart = 35; // The initial value of the --shadows CSS variable
+const transparentStart = 65; // The initial value of the --transparent CSS variable
+const shadowsStart = 75; // The initial value of the --shadows CSS variable
 
 /**
  * The animation function
@@ -26,7 +26,7 @@ function step(timestamp) {
     const progress = timestamp - startTime;
 
     // Calculate the current values of the CSS variables
-    const cycle = Math.sin(progress / 250) + (Math.cos(progress / 450)); // Adjust the denominator to change the speed of the heartbeat animation
+    const cycle = Math.sin(progress / 350) + (Math.cos(progress / 450)); // Adjust the denominator to change the speed of the heartbeat animation
     const transparent = transparentStart * (1 + 0.15 * cycle);
     const shadows = shadowsStart * (1 + 0.15 * cycle);
 

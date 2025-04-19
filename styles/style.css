@@ -22,15 +22,25 @@ body {
     overflow: hidden;
 }
 
-h1 {
-    font-size: 2rem;
-    color: rebeccapurple;
+#iframe {
+    pointer-events: none;
+    position: relative;
 }
+
+/* #iframe::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+} */
 
 #shadow {
     --transparent: 25dvh;
     --shadows: 35dvh;
-    background-color: black;
+    /* background-color: black; */
     height: 300dvh;
     width: 300dvw;
     position: absolute;
@@ -39,7 +49,13 @@ h1 {
     Title: info on mask-image
     Description: The mask-image property in CSS allows you to create a mask layer over an element, partially or fully hiding portions of it. You can use various types of images as the mask layer, including PNG images, SVG images, CSS gradients, or SVG <mask> elements.
     ---*/
-    mask-image: radial-gradient(circle, transparent var(--transparent), black var(--shadows));
+    /* mask-image: radial-gradient(url('../images/heart.png'), transparent var(--transparent), black var(--shadows)); */
+    -webkit-mask-image: url('../heart.svg');
+    mask-image: url('../heart.svg');
+
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 35% 35%;
     transform: translate(-50%, -50%);
     cursor: none;
 }
@@ -49,4 +65,8 @@ h1 {
     width: 100dvw;
     border: 2px solid black;
     box-shadow: 10px 10px black;
+}
+
+#heart {
+    display: none;
 }
